@@ -12,7 +12,6 @@ public:
     void Print();
 
 private:
-    std::vector<Color> GetCellColors();
     int num_rows;
     int num_cols;
     int cell_size;

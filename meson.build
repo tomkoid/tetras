@@ -9,6 +9,10 @@ raylib_dep = dependency('raylib')
 src = [
   'src/main.cpp',
   'src/grid.cpp',
+  'src/colors.cpp',
+  'src/position.cpp',
+  'src/blocks.cpp',
+  'src/block.cpp',
 ]
 
 exe = executable('tetras', src,
