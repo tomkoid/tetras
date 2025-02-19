@@ -17,8 +17,7 @@ int main(int argc, char** argv) {
     InitWindow(300, 600, "tetras");
     SetTargetFPS(60);
     Grid grid    = Grid();
-    LBlock block = LBlock();
-    grid.Print();
+    IBlock block = IBlock();
 
     while (!WindowShouldClose()) {
         BeginDrawing();
