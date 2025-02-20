@@ -1,7 +1,6 @@
 #include <iostream>
 #include <raylib.h>
-#include "grid.h"
-#include "blocks.cpp"
+#include "game.h"
 
 #define PROJECT_NAME "tetras"
 
@@ -16,14 +15,14 @@ int main(int argc, char** argv) {
 
     InitWindow(300, 600, "tetras");
     SetTargetFPS(60);
-    Grid grid    = Grid();
-    IBlock block = IBlock();
+
+    Game game = Game();
 
     while (!WindowShouldClose()) {
+        game.HandleInput();
         BeginDrawing();
         ClearBackground(dark_blue);
-        grid.Draw();
-        block.Draw();
+        game.Draw();
         EndDrawing();
     }
 

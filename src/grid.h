@@ -6,10 +6,12 @@
 class Grid {
 public:
     Grid();
-    int grid[20][10];
     void Initialize();
     void Draw();
     void Print();
+    bool IsCellOutside(int row, int col);
+
+    int grid[20][10];
 
 private:
     int num_rows;
